@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Isaaq's Hardware Store</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <h1> Isaaq's Hardware Store</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2>Your One-Stop Hardware Shop</h2>
+        <p>Quality plumbing, bathroom accessories, and durable tools — all at affordable prices.</p>
+    </section>
+
+    <!-- Categories -->
+    <section class="categories">
+        <h3>Browse by Category</h3>
+        <div class="category-grid">
+            <div class="category-box">Plumbing</div>
+            <div class="category-box">Bathroom</div>
+            <div class="category-box">Tools</div>
+        </div>
+    </section>
+
+    <!-- Product Section -->
+    <main>
+        <h2>Our Products</h2>
+        <section class="product-list">
+            <div class="product">
+                <img src="pics/Plumbing.jpg" alt="Plumbing Pipe">
+                <h3>Plumbing Pipe</h3>
+                <p>High-quality PVC pipe for all your plumbing needs.</p>
+                <p class="price">$20.00</p>
+                <button onclick="addToCart('Plumbing Pipe')">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="pics/bathroom.jpg" alt="Bathroom Kit">
+                <h3>Bathroom Kit</h3>
+                <p>Complete bathroom accessories kit with all essentials.</p>
+                <p class="price">$50.00</p>
+                <button onclick="addToCart('Bathroom Kit')">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="pics/toolset.jpg" alt="Tool Set">
+                <h3>Tool Set</h3>
+                <p>Durable tool set for DIY and professional use.</p>
+                <p class="price">$30.00</p>
+                <button onclick="addToCart('Tool Set')">Add to Cart</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <div class="contact-info">
+            <ul>
+                <li>📞 (254) 123-4567</li>
+                <li>📧 contact@hardwarestore.com</li>
+                <li>📍 123 Main St, City, Country</li>
+            </ul>
+        </div>
+
+        <div class="contact-form">
+            <h3>Send us a Message</h3>
+            <form>
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Hardware Store. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
